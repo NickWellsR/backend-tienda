@@ -24,10 +24,11 @@ const controllerUsers = {
       });
     }
   } catch (error) {
+    console.error('Error al crear usuario:', error);
     res.json({
       result: 'mistake',
       message: 'An error occurred while creating the user',
-      data: error
+      data: error && error.message ? error.message : error
     });
   }
 },
