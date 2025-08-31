@@ -32,3 +32,5 @@ app.use((req, res) => {
 });
 
 export default app;
+
+// Forzar redeploy en Railway
